@@ -1,42 +1,36 @@
-# Welcome to [Astro](https://astro.build)
+# demo-restaurant-astro-contentful
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/snowpackjs/astro/tree/latest/examples/starter)
+ An example which uses content managed in Contentful to generate an archetypal restaurant site using [Astro](https://astro.build).
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+ 👉 https://demo-restaurant-contentful-astro.netlify.app/
+ 
 
-## 🚀 Project Structure
+## Usage for Development and Deployment
 
-Inside of your Astro project, you'll see the following folders and files:
+
+### add the Contentful creds to your project as environment variable
+
+You can use the Netlify CLI for this
 
 ```
-/
-├── public/
-│   ├── robots.txt
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   └── Tour.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+
+# Create or link your project with Netlify
+netlify create
+# or
+netlify link
+
+# Add the Contentful Space ID
+netlify env:set CONTENTFUL_SPACE_ID XXX
+
+# Add the Contentful Content Delivery API access token
+netlify env:set CONTENTFUL_CONTENT_API_TOKEN XXX
+
+# Run Netlify Build to prime your build with the data 
+# This will use your centrally managed env vars
+netlify build
+
+# You now have data to build against
+netlify dev
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command         | Action                                      |
-|:----------------|:--------------------------------------------|
-| `npm install`   | Installs dependencies                       |
-| `npm run dev`   | Starts local dev server at `localhost:3000` |
-| `npm run build` | Build your production site to `./dist/`     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://github.com/snowpackjs/astro) or jump into our [Discord server](https://astro.build/chat).

@@ -1,7 +1,7 @@
 {
-    "name": "@example/starter",
-    "version": "0.0.1",
-    "private": true,
+    "name": "demo-restaurant-astro-contentful",
+    "version": "1.0.0",
+    "description": "An example which uses content managed in Contentful to generate an archetypal restaurant site using Astro.",
     "scripts": {
         "dev": "astro dev",
         "start": "astro dev",
