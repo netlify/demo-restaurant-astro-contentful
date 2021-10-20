@@ -1,0 +1,27 @@
+---
+  // layout and components
+  import BaseLayout from '../layouts/base.astro'
+  import MenuItem from '../components/MenuItem.astro'
+
+  // data
+  import json from '../../public/data/menu.json';
+  import pages from '../../public/data/pages.json';
+  const page = pages.menu;
+  const menu = json;
+---
+    
+<BaseLayout title={page.title}>
+
+  <main>
+    <h1 class="section-title">{ page.title}</h1>
+    <div class="section-intro">
+    {page.description}
+    </div>
+
+    {menu.map((item) => (
+      <MenuItem item={item} />
+    ))}
+  </main>
+
+</BaseLayout>
+
