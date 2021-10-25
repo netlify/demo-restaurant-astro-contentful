@@ -2,7 +2,7 @@
 
  An example which uses content managed in Contentful to generate an archetypal restaurant site using [Astro](https://astro.build).
 
- 👉 https://demo-restaurant-contentful-astro.netlify.app/
+ 👉 https://demo-restaurant-astro-contentful.netlify.app/
  
 
 ## Usage for Development and Deployment
@@ -32,5 +32,20 @@ netlify build
 # You now have data to build against
 netlify dev
 ```
+
+
+
+## Speedy start
+
+This example requires authenticated access to the Contentful API in order to build. But you can also explore a version where the content has been saved as part of the repo as JSON. That version will deploy in a couple of clicks and is a useful place to explore Astro.
+
+Explore that repo 👉 https://github.com/philhawksworth/demo-restaurant-astro-json
+
+
+
+Or, to jump right in and clone that repo and instantly generate and deploy it for free on Netlify, click the Deploy To Netlify button below.(But it's always smart to [look at the repo first](https://github.com/philhawksworth/demo-restaurant-astro-json))
+
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/philhawksworth/demo-restaurant-astro-json&campaign=devex-ph")
 
 
