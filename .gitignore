@@ -1,6 +1,9 @@
 # build output
 dist
 
+# fetched data
+public/data
+
 # dependencies
 node_modules/
 .snowpack/
